@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aves</title>
+  <link rel="stylesheet" href="aves.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">
+        <img src="Images/LOGO2.webp" alt="Bioperú Logo">
+        </div>
+        <div>
+          <h1>BIOPERÚ</h1>
+
+        </div>
+      </div>
+      <nav class="nav" aria-label="Principal">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="Galeria.html" class="nav-link">Galería</a>
+        <a href="mamiferos.html" class="nav-link">Mamíferos</a>
+        <a href="mapa.html" class="nav-link">Mapa</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-compact">
+      <h2>Aves del Perú</h2>
+      <p class="subtitle">Especies representativas de costa, sierra y selva.</p>
+    </section>
+
+    <section class="categoria" aria-labelledby="lista-aves">
+      <div class="categoria-header">
+        <h3 id="lista-aves">Lista de aves (30)</h3>
+        <a class="btn-outline" href="Galeria.html">Ver galería completa</a>
+      </div>
+
+      <div class="grid" aria-live="polite">
+        <!-- 1 Cóndor andino -->
+        <article class="card reveal" tabindex="0" data-id="1"
+          data-info="Vultur gryphus — Cóndor andino, emblemática ave carroñera de los Andes."
+          data-large="Images/condor.jpg">
+          <img src="Images/condor-menu.jpg" alt="Cóndor andino" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Cóndor andino</h4>
+            <p class="muted">Símbolo de los Andes.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 Guacamayo rojo -->
+        <article class="card reveal" tabindex="0" data-id="2"
+          data-info="Ara macao — Guacamayo rojo, plumaje brillante; amenazado por tráfico y pérdida de hábitat."
+          data-large="Images/guacamayo_rojo2.jpg">
+          <img src="Images/guacamayo_rojo.jpg" alt="Guacamayo rojo" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Guacamayo rojo</h4>
+            <p class="muted">Plumaje vibrante amazónico.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 Colibrí gigante -->
+        <article class="card reveal" tabindex="0" data-id="3"
+          data-info="Patagona gigas — Colibrí gigante, polinizador de zonas altoandinas."
+          data-large="Images/gigante.jpg">
+          <img src="Images/Colibrí2.jpg" alt="Colibrí gigante" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Colibrí gigante</h4>
+            <p class="muted">Polinizador de altura.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 Flamenco andino -->
+        <article class="card reveal" tabindex="0" data-id="4"
+          data-info="Phoenicoparrus andinus — Flamenco andino, habita lagunas altoandinas."
+          data-large="Images/flamencoandino.jpg">
+          <img src="Images/flamencoandino2.jpg" alt="Flamenco andino" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Flamenco andino</h4>
+            <p class="muted">Lagunas altoandinas.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 Gallito de las rocas -->
+        <article class="card reveal" tabindex="0" data-id="5"
+          data-info="Rupicola peruvianus — Gallito de las rocas, ave nacional de Perú, de colores intensos."
+          data-large="Images/gallitodelasrocas.jpg">
+          <img src="Images/gallitodelasrocas.jpg" alt="Gallito de las rocas" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Gallito de las rocas</h4>
+            <p class="muted">Ave emblemática del Perú.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6 Paujil -->
+        <article class="card reveal" tabindex="0" data-id="6"
+          data-info="Crax globulosa — Paujil, ave grande de la selva, dispersor de semillas."
+          data-large="Images/paujil2.jpg">
+          <img src="Images/paujil.jpg" alt="Paujil" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Paujil</h4>
+            <p class="muted">Ave de selva y bosque húmedo.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7 Martín pescador -->
+        <article class="card reveal" tabindex="0" data-id="7"
+          data-info="Chloroceryle americana — Martín pescador, frecuente en ríos y lagunas."
+          data-large="Images/martin_pescador2.jpg">
+          <img src="Images/martínpescador.jpg" alt="Martín pescador" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Martín pescador</h4>
+            <p class="muted">Pescador ribereño.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8 Golondrina -->
+        <article class="card reveal" tabindex="0" data-id="8"
+          data-info="Tachycineta albiventer — Golondrina andina/costera, viajera y adaptable."
+          data-large="Images/golondrina2.jpg">
+          <img src="Images/golondrina.jpg" alt="Golondrina" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Golondrina</h4>
+            <p class="muted">Viajera adaptativa.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9 Huallaga (Gaviotín) -->
+        <article class="card reveal" tabindex="0" data-id="9"
+          data-info="Sterna hirundinacea (ej.) — Gaviotín o charrán costero; aves marinas presentes en la costa."
+          data-large="Images/gaviotín2.webp">
+          <img src="Images/gaviotín.jpg" alt="Gaviotín" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Gaviotín</h4>
+            <p class="muted">Ave costera pescadora.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10 Pingüino de Humboldt -->
+        <article class="card reveal" tabindex="0" data-id="10"
+          data-info="Spheniscus humboldti — Pingüino de Humboldt, habita corrientes frías de la costa peruana."
+          data-large="Images/pingüinodehumboldt2.jpg">
+          <img src="Images/pingüinodehumboldt.jpg" alt="Pingüino de Humboldt" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Pingüino de Humboldt</h4>
+            <p class="muted">Especie costera emblemática.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11 Gaviota peruana -->
+        <article class="card reveal" tabindex="0" data-id="11"
+          data-info="Leucophaeus modestus — Gaviota peruana, propia de la costa y islas."
+          data-large="Images/gaviotaperuana3.jpg">
+          <img src="Images/gaviotaperuana2.jpg" alt="Gaviota peruana" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Gaviota peruana</h4>
+            <p class="muted">Frecuente en islas y costa.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12 Chotacabras -->
+        <article class="card reveal" tabindex="0" data-id="12"
+          data-info="Nyctibius spp. — Chotacabras o aves nocturnas, insectívoras y sigilosas."
+          data-large="Images/Chotacabras2.jpg">
+          <img src="Images/Chotacabras.jpg" alt="Chotacabras" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Chotacabras</h4>
+            <p class="muted">Nocturnas insectívoras.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 13 Tordo gigante (Pájaro carpintero etc.) - ejemplo -->
+        <article class="card reveal" tabindex="0" data-id="13"
+          data-info="Campephilus pollens (ej.) — Carpintero gigante (ejemplo de ave maderera); reemplaza si prefieres otra."
+          data-large="Images/carpinterogigante2.jpg">
+          <img src="Images/carpinterogigante.jpg" alt="Carpintero" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Carpintero gigante</h4>
+            <p class="muted">Dependiente de bosques maduros.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 14 Pato vapor -->
+        <article class="card reveal" tabindex="0" data-id="14"
+          data-info="Anas spp. — Patos y aves acuáticas presentes en humedales y lagunas."
+          data-large="Images/pato(var)2.jpg">
+          <img src="Images/pato(var).jpg" alt="Pato" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Pato (var.)</h4>
+            <p class="muted">Aves acuáticas de humedales.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 15 Huairuro (Tinamú) -->
+        <article class="card reveal" tabindex="0" data-id="15"
+          data-info="Tinamus spp. — Tinamú o huairuro, aves terrestres y discretas de la selva."
+          data-large="Images/tinamú2.webp">
+          <img src="Images/tinamú.jpg" alt="Tinamu" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Tinamú (Huairuro)</h4>
+            <p class="muted">Ave terrestre de selva.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 16 Aguilucho (e.g. Aguililla) -->
+        <article class="card reveal" tabindex="0" data-id="16"
+          data-info="Buteo/Accipiter spp. — Rapaces diurnas importantes como controladores de roedores."
+          data-large="Images/aguila2.webp">
+          <img src="Images/aguila.jpg" alt="Águila/Aguilucho" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Rapaz (Aguilucho/Águila)</h4>
+            <p class="muted">Cazador diurno.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 17 Pájaro bobo (e.g., larma) -->
+        <article class="card reveal" tabindex="0" data-id="17"
+          data-info="Zenaida auriculata (ej.) — Paloma o tórtola común en variados hábitats."
+          data-large="Images/tortola2.jpg">
+          <img src="Images/tortola.jpg" alt="Tórtola" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Tórtola / Paloma</h4>
+            <p class="muted">Común en zonas abiertas.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 18 Carpintero amazónico -->
+        <article class="card reveal" tabindex="0" data-id="18"
+          data-info="Celeus spp. — Carpinteros amazónicos, especialistas en bosques."
+          data-large="Images/carpinteroamazónico2.jpg">
+          <img src="Images/carpinteroamazónico.jpg" alt="Carpintero amazónico" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Carpintero amazónico</h4>
+            <p class="muted">Especialista del bosque.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 19 Cachaña (Cormorán) -->
+        <article class="card reveal" tabindex="0" data-id="19"
+          data-info="Phalacrocorax brasilianus — Cormorán o cachaña, cazador de peces costero y ribereño."
+          data-large="Images/cormorán2.jpg">
+          <img src="Images/cormorán.jpg" alt="Cormorán" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Cormorán</h4>
+            <p class="muted">Pescador costero y ribereño.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 20 Tui (e.g., tangara etc.) -->
+        <article class="card reveal" tabindex="0" data-id="20"
+          data-info="Tangara spp. / Thraupidae — Tangaras y aves pequeñas de colores vivos en selva y montes."
+          data-large="Images/tangara2.jpg">
+          <img src="Images/tangara.jpg" alt="Tangara" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Tangara (var.)</h4>
+            <p class="muted">Pequeñas aves coloridas.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 21 Cernícalo -->
+        <article class="card reveal" tabindex="0" data-id="21"
+          data-info="Falco sparverius — Cernícalo americano, pequeño halcón común en paisajes abiertos."
+          data-large="Images/cernícalo2.jpg">
+          <img src="Images/cernícalo.jpg" alt="Cernícalo" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Cernícalo</h4>
+            <p class="muted">Pequeño halcón.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 22 Pato de los torrentes (ej.) -->
+        <article class="card reveal" tabindex="0" data-id="22"
+          data-info="Merganetta armata — Pato torrentero, adaptable a ríos de montaña."
+          data-large="Images/patotorrentero2.jpg">
+          <img src="Images/patotorrentero.jpg" alt="Pato torrentero" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Pato torrentero</h4>
+            <p class="muted">Ríos de montaña.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 23 Zarapito/Chorlito (ej.) -->
+        <article class="card reveal" tabindex="0" data-id="23"
+          data-info="Numenius / Charadrius spp. — Aves playeras y zancudas, comunes en litorales y humedales."
+          data-large="Images/avezancuda2.jpg">
+          <img src="Images/avezancuda.jpg" alt="Ave zancuda" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Ave zancuda</h4>
+            <p class="muted">Playas y humedales.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 24 Picaflor (diversos) -->
+        <article class="card reveal" tabindex="0" data-id="24"
+          data-info="Diversos Trochilidae — Picaflores variados, polinizadores importantes."
+          data-large="Images/picaflor(var).jpg">
+          <img src="Images/picaflor(var)2.jpg" alt="Picaflor" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Picaflor (var.)</h4>
+            <p class="muted">Polinizadores pequeños.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 25 Pava aliblanca -->
+        <article class="card reveal" tabindex="0" data-id="25"
+          data-info="Penelope albipennis (ej.) — Pava aliblanca, especie de bosque; reemplaza si prefieres otra pava."
+          data-large="Images/pava(var)2.jpg">
+          <img src="Images/pava(var).jpg" alt="Pava" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Pava (var.)</h4>
+            <p class="muted">Ave de bosque.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 26 Gavilán -->
+        <article class="card reveal" tabindex="0" data-id="26"
+          data-info="Accipiter bicolor (ej.) — Gavilán pequeño presente en diversos biomas."
+          data-large="Images/gavilán2.jpg">
+          <img src="Images/gavilán.jpg" alt="Gavilán" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Gavilán</h4>
+            <p class="muted">Rapaz pequeño.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 27 Batará (Ave de río) -->
+        <article class="card reveal" tabindex="0" data-id="27"
+          data-info="Clytoctantes spp. — Aves ribereñas variadas; ejemplo representativo."
+          data-large="Images/averibereña2.jpg">
+          <img src="Images/averibereña.jpg" alt="Ave ribereña" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Ave ribereña</h4>
+            <p class="muted">Zonas fluviales y ribereñas.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 28 Herrerillo (ej.) -->
+        <article class="card reveal" tabindex="0" data-id="28"
+          data-info="Sitta / Cyanistes (ej.) — Pequeñas aves arbóreas; ejemplo de diversidad en montes."
+          data-large="Images/herrerillo2.jpg">
+          <img src="Images/herrerillo.jpg" alt="Herrerillo" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Herrerillo (ej.)</h4>
+            <p class="muted">Pequeña ave arbórea.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 29 Churrete (ej. chucao) -->
+        <article class="card reveal" tabindex="0" data-id="29"
+          data-info="Scelorchilus rubecula — Chucao o aves de sotobosque; ejemplo local de Chile/Perú (varias especies)."
+          data-large="Images/chucao2.jpg">
+          <img src="Images/chucao.jpg" alt="Chucao" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Chucao (ej.)</h4>
+            <p class="muted">Ave de sotobosque.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- 30 Jilguero / pinzón (ej.) -->
+        <article class="card reveal" tabindex="0" data-id="30"
+          data-info="Sporophila / Serinus spp. — Pinzones y jilgueros pequeños, comunes en campos y bordes."
+          data-large="Images/pinzón2.jpg">
+          <img src="Images/pinzón.jpg" alt="Pinzón / jilguero" class="card-img"
+               onerror="this.onerror=null;this.src='Images/placeholder.jpg'">
+          <div class="card-body">
+            <h4>Pinzón / Jilguero</h4>
+            <p class="muted">Pequeños paseriformes.</p>
+            <div class="card-actions">
+              <button class="btn" data-role="open">Ver más</button>
+              <button class="btn-like" aria-pressed="false">🤍</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Proyecto BIOPERÚ— Diseño de César Santiago — 2025</small>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-panel" role="document">
+      <button class="modal-close" aria-label="Cerrar (Esc)" type="button">&times;</button>
+      <div class="modal-grid">
+        <div class="modal-media">
+          <img id="modalImg" src="" alt="">
+        </div>
+        <div class="modal-body">
+          <h3 id="modalTitle"></h3>
+          <p id="modalText"></p>
+          <div class="modal-actions">
+            <button class="btn-like" id="modalLike" aria-pressed="false">🤍</button>
+            <a class="btn-ghost" id="modalMore" href="Galeria.html">Ir a la galería</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="aves.js" defer></script>
+</body>
+</html>

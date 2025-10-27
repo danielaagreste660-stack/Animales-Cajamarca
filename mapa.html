@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa de Animales de Perú - Bosque al Atardecer</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Tu CSS de Bosque al Atardecer -->
+  <style>
+    /* 🎨 Paleta: Bosque al Atardecer (resumen adaptado para mapa) */
+    :root {
+      --bg-1: #0f1720;
+      --bg-2: #122a22;
+      --accent: #c8a86b;
+      --accent-2: #8fb59a;
+      --muted: #bfc8bf;
+      --glass: rgba(255,255,255,0.03);
+      --shadow: 0 8px 24px rgba(3,6,8,0.6);
+      --radius: 14px;
+      --ease: cubic-bezier(.2,.9,.3,1);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(20,40,34,0.6), transparent),
+                  linear-gradient(180deg, var(--bg-1), var(--bg-2));
+      color: #e6efe6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    h2 { text-align: center; color: var(--accent); margin-top: 20px; }
+
+    #mapa {
+      height: 600px;
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.05);
+      box-shadow: var(--shadow);
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    }
+
+    .leaflet-popup-content-wrapper {
+      background: var(--panel, #0f1b16);
+      color: #e6efe6;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .leaflet-popup-tip {
+      background: var(--panel, #0f1b16);
+    }
+
+    /* Cambiar controles de zoom a más claros */
+    .leaflet-control-zoom {
+      background: var(--glass);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .leaflet-control-zoom a {
+      color: var(--accent);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Mapa de Animales Representativos de Perú</h2>
+<div id="mapa"></div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  // Crear mapa centrado en Perú
+  var mapa = L.map('mapa').setView([-9.19, -75.0152], 5);
+
+  // Mapa base oscuro para estilo Bosque
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap &copy; CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19
+  }).addTo(mapa);
+
+  // Iconos por región (usa tus PNG en Images/icons/)
+  var iconoCosta = L.icon({ iconUrl: 'Images/', iconSize: [40,40], iconAnchor: [20,40], popupAnchor: [0,-40] });
+  var iconoSierra = L.icon({ iconUrl: 'Images/', iconSize: [40,40], iconAnchor: [20,40], popupAnchor: [0,-40] });
+  var iconoSelva = L.icon({ iconUrl: 'Images/', iconSize: [40,40], iconAnchor: [20,40], popupAnchor: [0,-40] });
+
+  // Animales representativos
+  var animales = [
+    // Costa
+    {nombre: 'Gaviota peruana', lat: -12.0, lng: -77.0, icon: iconoCosta},
+    {nombre: 'Tortuga marina', lat: -13.5, lng: -76.0, icon: iconoCosta},
+    {nombre: 'Pelícano', lat: -10.5, lng: -76.0, icon: iconoCosta},
+    // Sierra
+    {nombre: 'Vicuña', lat: -14.5, lng: -70.0, icon: iconoSierra},
+    {nombre: 'Cóndor', lat: -13.0, lng: -71.0, icon: iconoSierra},
+    {nombre: 'puma', lat: -10.0, lng: -76.5, icon: iconoSierra},
+    // Selva
+    {nombre: 'Jaguar', lat: -5.0, lng: -73.0, icon: iconoSelva},
+    {nombre: 'Mono choro', lat: -6.5, lng: -72.5, icon: iconoSelva},
+    {nombre: 'Tapir', lat: -7.0, lng: -73.5, icon: iconoSelva},
+    {nombre: 'Guacamayo', lat: -5.5, lng: -71.5, icon: iconoSelva}
+  ];
+
+  // Agregar marcadores
+  animales.forEach(function(a) {
+    L.marker([a.lat, a.lng], {icon: a.icon})
+      .addTo(mapa)
+      .bindPopup(`<b>${a.nombre}</b>`);
+  });
+</script>
+
+</body>
+</html>
+
